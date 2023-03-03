@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="620dp"
+        android:layout_height="980dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bg1"
+        tools:layout_editor_absoluteX="-128dp"
+        tools:layout_editor_absoluteY="-158dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/titulointro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Hello World!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FEFEFE"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <!--Btn Matrix-->
+
+        <!--Btn Inception-->
+
+        <!-- Btn AmericanPie-->
+
+        <!--  Btn Civil War-->
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/btn_img"
+            android:onClick="cambiarPantallaMatrix"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulointro" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/btn_imgi"
+            android:onClick="CambiarPantallaInception"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_imga"
+            android:onClick="CambiarPantallaAmericanPie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulointro" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/btn_imagc"
+            android:onClick="CambiarPantallaCivilWar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
